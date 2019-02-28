@@ -6,9 +6,9 @@ import patterns.strategy.notMyLibrary.Waveform;
 public class FilterAdapter implements IProcessor {
 
 	/**
-	 * Паттерн "Адптор": адаптирование сторонней библиотеки
+	 * Паттерн "Адаптер": адаптация сторонней библиотеки
 	 * через интерфейс и класс
-	 * Применяем делегирование
+	 * Применяется делегирование
 	 */
 
 	private Filter filter;
