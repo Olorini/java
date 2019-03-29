@@ -1,4 +1,4 @@
-package basic.innerClasses;
+package basic.innerClassesExamples;
 
 public class Outer {
 	private int i;

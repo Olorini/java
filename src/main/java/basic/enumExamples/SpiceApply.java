@@ -1,4 +1,4 @@
-package basic.enum2;
+package basic.enumExamples;
 
 public class SpiceApply {
 
@@ -6,7 +6,7 @@ public class SpiceApply {
 
 	public static void main(String[] args) {
 		for (Spice s : Spice.values()) {
-			System.out.println(s + " " + s.ordinal());
+			System.out.println(s.name() + " " + s.ordinal());
 		}
 		/*
 		NOT 0
