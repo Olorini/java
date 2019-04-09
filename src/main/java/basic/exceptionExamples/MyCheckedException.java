@@ -7,6 +7,10 @@ package basic.exceptionExamples;
 
 public class MyCheckedException extends Exception {
 
+	public MyCheckedException(Throwable cause) {
+		super(cause);
+	}
+
 	public MyCheckedException(String message) {
 		super(message);
 	}

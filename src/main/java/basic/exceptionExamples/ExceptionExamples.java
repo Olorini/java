@@ -17,9 +17,11 @@ public class ExceptionExamples implements IExceptionExamples {
 		throw new MyCheckedException("Unsupported type found");
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MyCheckedException {
 		ExceptionExamples exceptionExamples = new ExceptionExamples();
-
+		/**
+		 * Вызов метода с непроверяемым исключением
+		 */
 		//exceptionExamples.calculate("no");
 		/*
 			Exception in thread "main" basic.exceptionExamples.MyUncheckedException:
@@ -28,6 +30,9 @@ public class ExceptionExamples implements IExceptionExamples {
 			at basic.exceptionExamples.ExceptionExamples.main(ExceptionExamples.java:17)
 		 */
 
+		/**
+		 * Вызов метода с проверяемым исключением
+		 */
 		try {
 			exceptionExamples.resolve("no");
 		} catch (MyCheckedException e) {
@@ -41,7 +46,10 @@ public class ExceptionExamples implements IExceptionExamples {
 		Нужно проверить проверить!
 		 */
 
-		//Обработать оба исключения
+		/**
+		 * Обработать оба исключения
+		 */
+
 		try {
 			exceptionExamples.resolve("no");
 			exceptionExamples.calculate("no");
@@ -51,8 +59,11 @@ public class ExceptionExamples implements IExceptionExamples {
 			System.out.println("Это выполняется всегда!");
 		}
 
-		// Try с автоматическим освобождением ресурсов,
-		// Чтобы в finally не вылетало исключение
+		/**
+		 * Try с автоматическим освобождением ресурсов,
+		 * Чтобы в finally не вылетало исключение
+ 		 */
+
 		/*
 		Ресурс реализует AutoCloseable, в нем один метод close
 		он и выполнится в любом случае
@@ -61,6 +72,15 @@ public class ExceptionExamples implements IExceptionExamples {
 			is.read();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
+		}
+
+		/**
+		 * Обертывание исключения
+		 */
+		try {
+			exceptionExamples.resolve("no");
+		} catch (Exception e) {
+			throw new MyCheckedException(e);
 		}
 	}
 }
