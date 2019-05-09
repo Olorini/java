@@ -41,7 +41,7 @@ public class TextStreamExamples {
 	 */
 	private void arrays() throws IOException {
 		// Чтение из массива
-		reader = new CharArrayReader(new char[] {'a', 'b', 'c'});
+		reader = new CharArrayReader(new char[]{'a', 'b', 'c'});
 		reader = new StringReader("Hello word");
 
 		// Запись
@@ -105,7 +105,7 @@ public class TextStreamExamples {
 		StreamTokenizer tokenizer = new StreamTokenizer(reader);
 		StringTokenizer tokenizer2 = new StringTokenizer("Hello word!");
 
-		// Номальный класс
+		// Нормальный класс
 		Scanner scanner = new Scanner(reader)
 				.useDelimiter("\\|")
 				.useLocale(Locale.forLanguageTag("ru"));

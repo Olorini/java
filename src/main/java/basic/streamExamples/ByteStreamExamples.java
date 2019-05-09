@@ -4,7 +4,13 @@ import jdk.internal.org.objectweb.asm.ClassReader;
 
 import java.io.*;
 import java.net.Socket;
+import java.nio.ByteBuffer;
+import java.nio.channels.Channels;
+import java.nio.channels.FileChannel;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.channels.WritableByteChannel;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class ByteStreamExamples {
@@ -98,5 +104,26 @@ public class ByteStreamExamples {
 		InputStream inputStream = new ByteArrayInputStream(data);
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		byte[] result = outputStream.toByteArray();
+	}
+
+	/**
+	 * Неблокирующий ввод/вывод. Не нужно ждать освобождение ресурса потоком
+	 * Сервер, обслуживающий в одном потоке несколько клиентов
+	 */
+	private void notBlock() {
+		Path path = Paths.get("C\\:path");
+		try (ReadableByteChannel in = FileChannel.open(path);
+		     WritableByteChannel out = Channels.newChannel(System.out)) {
+			ByteBuffer buffer = ByteBuffer.allocate(1024);
+			while (in.read(buffer) >= 0 || buffer.position() != 0) {
+				buffer.flip();
+				out.write(buffer);
+				buffer.compact();
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 }
