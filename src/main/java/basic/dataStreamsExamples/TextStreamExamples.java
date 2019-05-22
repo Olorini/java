@@ -1,4 +1,4 @@
-package basic.streamExamples;
+package basic.dataStreamsExamples;
 
 import java.io.*;
 import java.nio.charset.Charset;

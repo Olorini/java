@@ -1,6 +1,4 @@
-package basic.streamExamples;
-
-import jdk.internal.org.objectweb.asm.ClassReader;
+package basic.dataStreamsExamples;
 
 import java.io.*;
 import java.net.Socket;

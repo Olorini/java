@@ -35,5 +35,9 @@ public class StringAndCharExamples {
 
 		//Сравнение без учета регистра
 		boolean b3 = s1.equalsIgnoreCase(s2);
+
+		// Форматирование строк
+		String name = "Ann";
+		String.format("Hello, %s", name);
 	}
 }
