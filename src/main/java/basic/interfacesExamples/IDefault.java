@@ -1,6 +1,5 @@
 package basic.interfacesExamples;
 
-//@FunctionalInterface -- анотация для функционального интерфейса без default
 public interface IDefault {
 
 	/*
@@ -11,4 +10,6 @@ public interface IDefault {
 	default String getMainString() {
 		return "";
 	}
+
+	void calculateSquare();
 }
