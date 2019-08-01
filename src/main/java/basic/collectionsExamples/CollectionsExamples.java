@@ -6,10 +6,10 @@ public class CollectionsExamples {
 
 	Collection<String> c = new ArrayList<>();
 
-	// Дешовый доступ по индексам
+	// Дешевый доступ по индексам
 	// Один и тот же элемент встречается несколько раз
 	List<String> l1 = new ArrayList<>();
-	// Дешовое удаление и добавление в начале/конце списка
+	// Дешевое удаление и добавление в начале/конце списка
 	List<String> l2 = new LinkedList<>();
 
 	// Очередь
@@ -76,6 +76,14 @@ public class CollectionsExamples {
 		Set<String> set5 = new HashSet<>(Arrays.asList(arr));
 		// Или
 		Collections.addAll(set, arr);
+
+		c.remove("k");
+
+		// Проверка на пустоту
+		// Не следует использовать size
+		if (ul.isEmpty()) {
+			ul.sort(Comparator.comparingInt(String::length));
+		}
 
 	}
 }
