@@ -3,7 +3,8 @@ package patterns;
 public class Decorator {
 	/**
 	 *  Паттерн проектирования "ДЕКОРАТОР"
-	 *  Обертка
+	 *  Обертка -- не меняет интефейс,
+	 *  только добавляет новые обязанности
 	 */
 
 	public static void main(String[] args) {
