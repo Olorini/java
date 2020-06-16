@@ -1,4 +1,9 @@
-package patterns;
+package patterns.group_two;
+
+/**
+ * Паттерн проектирования "ФАБРИЧНЫЙ МЕТОД"
+ * Субклассы решают объекты каких классов создавать
+ */
 
 public class FactoryMethod {
 	public static void main(String[] args) {

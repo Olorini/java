@@ -1,4 +1,4 @@
-package patterns;
+package patterns.group_one;
 
 public class Decorator {
 	/**

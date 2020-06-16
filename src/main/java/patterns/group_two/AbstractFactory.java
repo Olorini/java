@@ -1,4 +1,4 @@
-package patterns;
+package patterns.group_two;
 
 public class AbstractFactory {
 	public static void main(String[] args) {

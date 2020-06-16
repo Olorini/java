@@ -1,7 +1,9 @@
-package patterns;
+package patterns.group_two;
 
 /**
  * Паттерн проектирования "СТРАТЕГИЯ"
+ * Инкапсуляция вариантов поведения
+ * и выбор варианта посредством делегирования
  */
 
 public class Strategy {
