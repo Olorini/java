@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Паттерн проектирования "НАБЛЮДАТЕЛЬ -- СЛУШАТЕЛЬ"
  */
-public class Observer {
+public class ObserverPattern {
 
 	public static void main(String[] args) {
 		IObserver ob1 = new ConcreteObserveOne();

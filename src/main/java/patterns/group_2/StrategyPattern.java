@@ -1,4 +1,4 @@
-package patterns.group_two;
+package patterns.group_2;
 
 /**
  * Паттерн проектирования "СТРАТЕГИЯ"
@@ -6,7 +6,7 @@ package patterns.group_two;
  * и выбор варианта посредством делегирования
  */
 
-public class Strategy {
+public class StrategyPattern {
 
 	public static void main(String[] args) {
 		Duck liveDuck = new MallardDuck();

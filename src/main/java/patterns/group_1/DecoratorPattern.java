@@ -1,6 +1,6 @@
-package patterns.group_one;
+package patterns.group_1;
 
-public class Decorator {
+public class DecoratorPattern {
 	/**
 	 *  Паттерн проектирования "ДЕКОРАТОР"
 	 *  Обертка -- не меняет интефейс,

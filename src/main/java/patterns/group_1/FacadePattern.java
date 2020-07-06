@@ -1,6 +1,6 @@
-package patterns.group_one;
+package patterns.group_1;
 
-public class Facade {
+public class FacadePattern {
 	/**
 	 *  Паттерн проектирования "ФАСАД"
 	 *  Обертка -- Упрощает интерфейс

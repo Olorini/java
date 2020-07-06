@@ -5,17 +5,17 @@ package patterns;
  * гарантирует, что класс имеет только один экземпляр
  * предоставляет глобальную точку доступа к этому экземпляру
  */
-public class Singleton {
+public class SingletonPattern {
 	// Потокобезпасный с лучшей производительностью
-	private volatile static Singleton instance;
+	private volatile static SingletonPattern instance;
 
-	private Singleton() {}
+	private SingletonPattern() {}
 
-	public static Singleton getInstance() {
+	public static SingletonPattern getInstance() {
 		if (instance == null) {
-			synchronized (Singleton.class) {
+			synchronized (SingletonPattern.class) {
 				if (instance == null) {
-					instance = new Singleton();
+					instance = new SingletonPattern();
 				}
 			}
 		}

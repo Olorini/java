@@ -3,7 +3,7 @@ package patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Commander {
+public class CommandPattern {
 	/**
 	 * Паттерн проектирования - КОМАНДА
 	 * Подходит для организации очереди запросов

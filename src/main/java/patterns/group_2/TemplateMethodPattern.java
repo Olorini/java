@@ -1,11 +1,11 @@
-package patterns.group_two;
+package patterns.group_2;
 
 /**
  * Паттерн проектирования "ШАБЛОННЫЙ МЕТОД"
  * Субклассы определяют реализацию шагов алгоритма
  */
 
-public class TemplateMethod {
+public class TemplateMethodPattern {
 
 	public static void main(String[] args) {
 		CaffeineBeverage tea = new Tea();

@@ -1,6 +1,6 @@
-package patterns.group_two;
+package patterns.group_2;
 
-public class AbstractFactory {
+public class AbstractFactoryPattern {
 	public static void main(String[] args) {
 		IProjectFactory factory = new WebFactoryProject();
 		IDeveloper developer = factory.createDeveloper();

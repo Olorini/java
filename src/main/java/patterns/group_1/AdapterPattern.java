@@ -1,6 +1,6 @@
-package patterns.group_one;
+package patterns.group_1;
 
-public class Adapter {
+public class AdapterPattern {
 	/**
 	 *  Паттерн проектирования "АДАПТЕР"
 	 *  Обертка -- преобразует интерфейс к другому интерфейсу
