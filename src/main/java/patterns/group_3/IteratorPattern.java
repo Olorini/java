@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Паттерн проектирования "ИТЕРАТОР"
+ * Механизм перебора коллекции
+ * без раскрытия внутренней реализации
+ */
+
 public class IteratorPattern {
 
 	public static void main(String[] args) {

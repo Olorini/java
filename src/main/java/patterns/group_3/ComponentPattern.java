@@ -5,6 +5,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Паттерн проектирования "КОМПОНОВЩИК"
+ * Позволяет выполнять одинаковые операции
+ * с коллекциями и объектами этих коллекций
+ */
+
 public class ComponentPattern {
 
 	public static void main(String[] args) {
